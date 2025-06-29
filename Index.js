@@ -41,8 +41,21 @@
 
             //reverse a string //
 
-let str = "hello world !";
-function reversestring (str){
-    return str.split("").reverse().join("");
+// let str = "hello world !";
+// function reversestring (str){
+//     return str.split("").reverse().join("");
+// }
+// console.log(reversestring(str));
+
+
+            //leap year or not
+
+let isleapyear = (year) => {
+    if ((year % 4 === 0 &&  year % 100 !== 0) ||
+year % 4 === 0){
+    return true ;
+}else
+    
+    {return }
 }
-console.log(reversestring(str));
+console.log(isleapyear(2000))
