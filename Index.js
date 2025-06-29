@@ -28,7 +28,7 @@
 // console.log(sum);
 
 
-function Area_of_triangle(width , height){
+let Area_of_triangle = (width , height)=>{
     return (width * height) ;
 
 }
