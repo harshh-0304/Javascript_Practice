@@ -13,8 +13,17 @@
 // }
 
 
-let i = 5 ;
-while (i <= 5 ){
-    console.log(i)
-    i++ ;
-}
+// let i = 5 ;
+// while (i <= 5 ){
+//     console.log(i)
+//     i++ ;
+// }
+
+ function Add_numbers(a ,b){
+
+
+        return a + b ;
+ }
+let sum = Add_numbers(7,9);
+console.log(sum);
+
