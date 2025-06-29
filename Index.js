@@ -12,7 +12,7 @@
 // //     console.log(i); // This will log 0 to 5
 // // }
 
-
+                    //for and while loops /////
 // // let i = 5 ;
 // // while (i <= 5 ){
 // //     console.log(i)
@@ -25,12 +25,24 @@
 //         return a + b ;
 //  }
 // let sum = Add_numbers(7,9);
-// console.log(sum);
+// 
+// // console.log(sum);
 
 
-let Area_of_triangle = (width , height)=>{
-    return (width * height) ;
+                    //area of rectangle
 
+// let Area_of_triangle = (width , height)=>{
+//     return (width * height) ;
+
+// }
+// let area = Area_of_triangle(9 , 8);
+// console.log(area) ;
+
+
+            //reverse a string //
+
+let str = "hello world !";
+function reversestring (str){
+    return str.split("").reverse().join("");
 }
-let area = Area_of_triangle(9 , 8);
-console.log(area) ;
+console.log(reversestring(str));
