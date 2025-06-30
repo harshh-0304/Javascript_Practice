@@ -97,3 +97,9 @@
 // console.log(paragraph) ;
 
 // paragraph.textContent = " this text is been changed using javascript";
+
+let container = document.getElementById("container")
+
+let btn = document.createElement("button") ;
+btn.textContent = "click me" ;
+container.appendChild(btn);
