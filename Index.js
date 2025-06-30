@@ -66,5 +66,6 @@ let arr = [30,40,32,38,59,37] ;
 let sum = 0 ;
 for (let i=0;i<arr.length;i++) 
 {
-    console.log(arr.length)
+    sum+=arr[i];
 }
+console.log("the sum of all elememts is " +sum);
