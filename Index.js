@@ -50,12 +50,21 @@
 
             //leap year or not
 
-let isleapyear = (year) => {
-    if ((year % 4 === 0 &&  year % 100 !== 0) ||
-year % 4 === 0){
-    return true ;
-}else
+// let isleapyear = (year) => {
+//     if ((year % 4 === 0 &&  year % 100 !== 0) ||
+// year % 4 === 0){
+//     return true ;
+// }else
     
-    {return }
+//     {return }
+// }
+// console.log(isleapyear(2000))
+
+
+let arr = [30,40,32,38,59,37] ;
+
+let sum = 0 ;
+for (let i=0;i<arr.length;i++) 
+{
+    console.log(arr.length)
 }
-console.log(isleapyear(2000))
