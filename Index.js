@@ -98,8 +98,26 @@
 
 // paragraph.textContent = " this text is been changed using javascript";
 
-let container = document.getElementById("container")
 
-let btn = document.createElement("button") ;
-btn.textContent = "click me" ;
-container.appendChild(btn);
+        // button
+// let container = document.getElementById("container")
+
+// let btn = document.createElement("button") ;
+// btn.textContent = "click me" ;
+// container.appendChild(btn);
+     
+
+        // display alert
+
+        let buttons = document.getElementsByTagName("button"); // This is a collection
+let firstButton = buttons[0]; // Access the first button in the collection
+
+if (firstButton) { // Always good to check if the element actually exists
+    firstButton.addEventListener("click", () => {
+        alert("Button clicked");
+    });
+} else {
+    console.log("No button found on the page.");
+}
+
+
