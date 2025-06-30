@@ -60,12 +60,28 @@
 // }
 // console.log(isleapyear(2000))
 
+        // sum of all array elements
+// let arr = [30,40,32,38,59,37] ;
 
-let arr = [30,40,32,38,59,37] ;
+// let sum = 0 ;
+// for (let i=0;i<arr.length;i++) 
+// {
+//     sum = sum + arr[i] ;
+// }
+// console.log("the sum of all elememts is " +sum);
 
-let sum = 0 ;
-for (let i=0;i<arr.length;i++) 
-{
-    sum = sum + arr[i] ;
+        //car object
+
+        let car = {
+            company : "toyota" ,
+       model : "hilux" ,
+       Year : 2015
+        }
+
+car.startEngine = function (){
+    console.log("Engine started")
 }
-console.log("the sum of all elememts is " +sum);
+
+
+
+car.startEngine();
