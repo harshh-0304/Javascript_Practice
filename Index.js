@@ -70,18 +70,30 @@
 // }
 // console.log("the sum of all elememts is " +sum);
 
-        //car object
+//         //car object
 
-        let car = {
-            company : "toyota" ,
-       model : "hilux" ,
-       Year : 2015
-        }
+//         let car = {
+//             company : "toyota" ,
+//        model : "hilux" ,
+//        Year : 2015
+//         }
 
-car.startEngine = function (){
-    console.log("Engine started")
-}
+// car.startEngine = function (){
+//     console.log("Engine started")
+// }
 
 
 
-car.startEngine();
+
+// car.startEngine();
+
+
+
+
+// CHANGE PARAGRAGH TEXT 
+
+
+// let paragraph = document.getElementById("my paragraph") ;
+// console.log(paragraph) ;
+
+// paragraph.textContent = " this text is been changed using javascript";
