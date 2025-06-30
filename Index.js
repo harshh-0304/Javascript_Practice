@@ -121,19 +121,28 @@
 // }
 
 
-            // Factorial
-function factorial(num) {
-    if (num === 0 || num === 1) {
-        return 1;
-    } else { // Corrected: removed the semicolon here
-        let fact = 1; // Declared inside the else block, but its value needs to be accessible outside
-        for (let i = 1; i <= num; i++) {
-            fact *= i;
-        }
-        return fact; // Corrected: return statement moved inside the else block
-    }
-}
+//             // Factorial
+// function factorial(num) {
+//     if (num === 0 || num === 1) {
+//         return 1;
+//     } else { // Corrected: removed the semicolon here
+//         let fact = 1; // Declared inside the else block, but its value needs to be accessible outside
+//         for (let i = 1; i <= num; i++) {
+//             fact *= i;
+//         }
+//         return fact; // Corrected: return statement moved inside the else block
+//     }
+// }
 
-console.log(factorial(6)); // Output: 720
-console.log(factorial(0)); // Output: 1
-console.log(factorial(1)); // Output: 1
+// console.log(factorial(6)); // Output: 720
+// console.log(factorial(0)); // Output: 1
+// console.log(factorial(1)); // Output: 1
+
+    //
+    // random number//
+
+
+    function getRandomNumber( Min , Max){
+return Math.floor( Math.random()*(50 + 1) + 50) ;
+    }
+    console.log(getRandomNumber());
