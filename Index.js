@@ -109,15 +109,31 @@
 
         // display alert
 
-        let buttons = document.getElementsByTagName("button"); // This is a collection
-let firstButton = buttons[0]; // Access the first button in the collection
+//         let buttons = document.getElementsByTagName("button"); // This is a collection
+// let firstButton = buttons[0]; // Access the first button in the collection
 
-if (firstButton) { // Always good to check if the element actually exists
-    firstButton.addEventListener("click", () => {
-        alert("Button clicked");
-    });
-} else {
-    console.log("No button found on the page.");
+// if (firstButton) { // Always good to check if the element actually exists
+//     firstButton.addEventListener("click", () => {
+//         alert("Button clicked");
+//     });
+// } else {
+//     console.log("No button found on the page.");
+// }
+
+
+            // Factorial
+function factorial(num) {
+    if (num === 0 || num === 1) {
+        return 1;
+    } else { // Corrected: removed the semicolon here
+        let fact = 1; // Declared inside the else block, but its value needs to be accessible outside
+        for (let i = 1; i <= num; i++) {
+            fact *= i;
+        }
+        return fact; // Corrected: return statement moved inside the else block
+    }
 }
 
-
+console.log(factorial(6)); // Output: 720
+console.log(factorial(0)); // Output: 1
+console.log(factorial(1)); // Output: 1
