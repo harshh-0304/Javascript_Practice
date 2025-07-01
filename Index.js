@@ -142,6 +142,12 @@
     // random number//
 
 
+
+
+
+
+
+    
 //     function getRandomNumber( Min , Max){
 // return Math.floor( Math.random()*(50 + 1) + 50) ;
 //     }
@@ -218,12 +224,21 @@
 // remove all occurence
 
 
-function removeElementFromArray(){
-return arr.filter(item => item !==target);
+// function removeElementFromArray(){
+// return arr.filter(item => item !==target);
+
+// }
+// let arr = [10,50,30,30,20,60]
+// let target = 10 ;
+
+//    let removed =     removeElementFromArray(arr,target)
+//    console.log(removed)
+
+// current date and time
+function getCurrentDatendTime(){
+        let currentDate = new Date ;
+        return currentDate.toLocaleString();
 
 }
-let arr = [10,50,30,30,20,60]
-let target = 10 ;
 
-   let removed =     removeElementFromArray(arr,target)
-   console.log(removed)
+console.log(getCurrentDatendTime()) ;
