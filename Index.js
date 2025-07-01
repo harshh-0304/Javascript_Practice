@@ -173,18 +173,30 @@
         //reverse odd length
 
 
-        function reverseOdd(str) {
-    function reverseString(str) {
-        return str.split('').reverse().join('');
-    }
+//         function reverseOdd(str) {
+//     function reverseString(str) {
+//         return str.split('').reverse().join('');
+//     }
 
-    const words = str.split(' ');
-    for (let i = 0; i < words.length; i++) {
-        if (words[i].length % 2 !== 0) {
-            words[i] = reverseString(words[i]);
-        }
-    }
-    return words.join(' ');
+//     const words = str.split(' ');
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i].length % 2 !== 0) {
+//             words[i] = reverseString(words[i]);
+//         }
+//     }
+//     return words.join(' ');
+// }
+
+// console.log(reverseOdd(" one piece")); // elppa
+
+
+// use map function to double the array
+
+
+function doubleArrayElements(num){
+return arr.map((num)=>
+        num * 2 
+)
 }
-
-console.log(reverseOdd(" one piece")); // elppa
+let arr = [73,23,32,43,54,64]
+console.log(doubleArrayElements(arr)) ;
