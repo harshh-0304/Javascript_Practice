@@ -216,3 +216,14 @@
 // console.log(largest);
 
 // remove all occurence
+
+
+function removeElementFromArray(){
+return arr.filter(item => item !==target);
+
+}
+let arr = [10,50,30,30,20,60]
+let target = 10 ;
+
+   let removed =     removeElementFromArray(arr,target)
+   console.log(removed)
