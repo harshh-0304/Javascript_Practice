@@ -149,9 +149,22 @@
 
         //higher order functions return even numbers
 
-        let arr = [73,34,54,43,32,23,55,23]
-        function filterEvenNumber(arr){
-                return arr.filter(num => num % 2 === 0) ;
+        // let arr = [73,34,54,43,32,23,55,23]
+        // function filterEvenNumber(arr){
+        //         return arr.filter(num => num % 2 === 0) ;
 
-        }
-        console.log(filterEvenNumber(arr)) ;
+        // }
+        // console.log(filterEvenNumber(arr)) ;
+
+
+        // image gallery using dynamically generated elements
+         function createImageElement(src){
+                let img = document.createElement("img");
+                img.src = src ;
+         return img ;
+         }
+         let gallery = document.getElementById("gallery") ;
+         let imgUrls = []
+
+         imgUrls.forEach(Url => gallery.appendChild(createImageElement(Url)));
+         
