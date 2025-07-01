@@ -158,13 +158,33 @@
 
 
         // image gallery using dynamically generated elements
-         function createImageElement(src){
-                let img = document.createElement("img");
-                img.src = src ;
-         return img ;
-         }
-         let gallery = document.getElementById("gallery") ;
-         let imgUrls = []
+        //  function createImageElement(src){
+        //         let img = document.createElement("img");
+        //         img.src = src ;
+        //  return img ;
+        //  }
+        //  let gallery = document.getElementById("gallery") ;
+        //  let imgUrls = []//add images here 
 
-         imgUrls.forEach(Url => gallery.appendChild(createImageElement(Url)));
-         
+        //  imgUrls.forEach(Url => gallery.appendChild(createImageElement(Url)));
+
+
+
+        //reverse odd length
+
+
+        function reverseOdd(str) {
+    function reverseString(str) {
+        return str.split('').reverse().join('');
+    }
+
+    const words = str.split(' ');
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length % 2 !== 0) {
+            words[i] = reverseString(words[i]);
+        }
+    }
+    return words.join(' ');
+}
+
+console.log(reverseOdd(" one piece")); // elppa
