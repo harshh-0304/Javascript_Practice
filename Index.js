@@ -142,7 +142,16 @@
     // random number//
 
 
-    function getRandomNumber( Min , Max){
-return Math.floor( Math.random()*(50 + 1) + 50) ;
-    }
-    console.log(getRandomNumber());
+//     function getRandomNumber( Min , Max){
+// return Math.floor( Math.random()*(50 + 1) + 50) ;
+//     }
+//     console.log(getRandomNumber());
+
+        //higher order functions return even numbers
+
+        let arr = [73,34,54,43,32,23,55,23]
+        function filterEvenNumber(arr){
+                return arr.filter(num => num % 2 === 0) ;
+
+        }
+        console.log(filterEvenNumber(arr)) ;
