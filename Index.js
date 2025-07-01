@@ -193,10 +193,26 @@
 // use map function to double the array
 
 
-function doubleArrayElements(num){
-return arr.map((num)=>
-        num * 2 
-)
-}
-let arr = [73,23,32,43,54,64]
-console.log(doubleArrayElements(arr)) ;
+// function doubleArrayElements(num){
+// return arr.map((num)=>
+//         num * 2 
+// )
+// }
+// let arr = [73,23,32,43,54,64]
+// console.log(doubleArrayElements(arr)) ;
+
+
+
+//largest element using reduce
+
+// function findLargestElement(arr) {
+//   return arr.reduce((max, current) => {
+//     return current > max ? current : max;
+//   });
+// }
+
+// let arr = [34, 43, 32, 46, 65, 33, 66, 78, 86];
+// let largest = findLargestElement(arr);
+// console.log(largest);
+
+// remove all occurence
