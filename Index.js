@@ -235,10 +235,43 @@
 //    console.log(removed)
 
 // current date and time
-function getCurrentDatendTime(){
-        let currentDate = new Date ;
-        return currentDate.toLocaleString();
+// function getCurrentDatendTime(){
+//         let currentDate = new Date ;
+//         return currentDate.toLocaleString();
 
+// }
+
+// console.log(getCurrentDatendTime()) ;
+                                // recursive funciton to calculate factorial
+
+                //         function factorial(n){
+                //                 if(n ===1 ){
+                //                         return 1 ;
+                //         }
+                //                 else
+                //         {
+                //                 return n*(factorial-1) ;
+                //         }
+                // }
+                //         console.log(factorial(5));
+// function fibonacci(n){
+//         if (n<=1){
+//         return n;
+
+// }else{
+//         return fibonacci(n-1)+fibonacci(n+2)
+// }
+
+        
+// }
+
+// console.log(fibonacci(5))
+function fibonacci(n) {
+    if (n <= 1) {
+        return n; // Use return n instead of 1, so fib(0) = 0, fib(1) = 1
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
 }
 
-console.log(getCurrentDatendTime()) ;
+console.log(fibonacci(5)); // Output: 5
