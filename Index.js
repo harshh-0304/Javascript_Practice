@@ -266,12 +266,34 @@
 // }
 
 // console.log(fibonacci(5))
-function fibonacci(n) {
-    if (n <= 1) {
-        return n; // Use return n instead of 1, so fib(0) = 0, fib(1) = 1
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
-    }
+// function fibonacci(n) {
+//     if (n <= 1) {
+//         return n; // Use return n instead of 1, so fib(0) = 0, fib(1) = 1
+//     } else {
+//         return fibonacci(n - 1) + fibonacci(n - 2);
+//     }
+// }
+
+// console.log(fibonacci(5)); // Output: 5
+
+
+
+//prototype
+
+
+function product(name, value, quantity) {
+    this.name = name;
+    this.value = value;
+    this.quantity = quantity;
 }
 
-console.log(fibonacci(5)); // Output: 5
+product.prototype.calculateTotalValue = function () {
+    return this.value * this.quantity;
+}
+
+const product1 = new product("car", 50, 2);
+const totalValue1 = product1.calculateTotalValue();
+
+console.log(`Total value of ${product1.name} is $${totalValue1}`);
+console.log(product.prototype);
+console.log(product1);
