@@ -281,19 +281,40 @@
 //prototype
 
 
-function product(name, value, quantity) {
-    this.name = name;
-    this.value = value;
-    this.quantity = quantity;
+// function product(name, value, quantity) {
+//     this.name = name;
+//     this.value = value;
+//     this.quantity = quantity;
+// }
+
+// product.prototype.calculateTotalValue = function () {
+//     return this.value * this.quantity;
+// }
+
+// const product1 = new product("car", 50, 2);
+// const totalValue1 = product1.calculateTotalValue();
+
+// console.log(`Total value of ${product1.name} is $${totalValue1}`);
+// console.log(product.prototype);
+// console.log(product1);
+
+
+//while fetching data from api i get error so using try catch
+
+
+
+           
+async function fetchData(){
+        try{
+                let response = await fetch('https://jsonplaceholder.typicode.com/todos/1') ;
+                let data = await response.json();
+                console.log(data) ;
+
+        }
+        catch(error)
+        {
+                console.error("error fetching data :" + error)
+        }
 }
 
-product.prototype.calculateTotalValue = function () {
-    return this.value * this.quantity;
-}
-
-const product1 = new product("car", 50, 2);
-const totalValue1 = product1.calculateTotalValue();
-
-console.log(`Total value of ${product1.name} is $${totalValue1}`);
-console.log(product.prototype);
-console.log(product1);
+fetchData();
