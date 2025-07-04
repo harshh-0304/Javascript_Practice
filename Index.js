@@ -304,17 +304,56 @@
 
 
            
-async function fetchData(){
-        try{
-                let response = await fetch('https://jsonplaceholder.typicode.com/todos/1') ;
-                let data = await response.json();
-                console.log(data) ;
+// async function fetchData(){
+//         try{
+//                 let response = await fetch('https://jsonplaceholder.typicode.com/todos/1') ;
+//                 let data = await response.json();
+//                 console.log(data) ;
 
-        }
-        catch(error)
-        {
-                console.error("error fetching data :" + error)
-        }
+//         }
+//         catch(error)
+//         {
+//                 console.error("error fetching data :" + error)
+//         }
+// }
+
+// fetchData();
+
+// multiple api calls using callbacks
+
+
+// function makeApiCall(url , callback){
+
+
+//                 fetch ( url) 
+//                 .then (response => response.json())
+//                 .then (data => callback(data))
+//                 .catch(error => console.error("error during api call:" ,error.message))
+// }
+
+// function handleData(data){
+//         console.log("processed Data",data) ;
+
+// }
+// function main (){
+//         const apiUrl1 = "https://jsonplaceholder.typicode.com/todos/1" ;
+// makeApiCall.apply(url , handleData) ;
+// }
+// main();
+function makeApiCall(url, callback) {
+    fetch(url)
+        .then(response => response.json())
+        .then(data => callback(data))
+        .catch(error => console.error("Error during API call:", error.message));
 }
 
-fetchData();
+function handleData(data) {
+    console.log("Processed Data:", data);
+}
+
+function main() {
+    const apiUrl1 = "https://jsonplaceholder.typicode.com/todos/1";
+    makeApiCall(apiUrl1, handleData); // ✅ Correct function call
+}
+
+main();
