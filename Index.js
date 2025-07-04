@@ -340,20 +340,34 @@
 // makeApiCall.apply(url , handleData) ;
 // }
 // main();
-function makeApiCall(url, callback) {
-    fetch(url)
-        .then(response => response.json())
-        .then(data => callback(data))
-        .catch(error => console.error("Error during API call:", error.message));
-}
+// function makeApiCall(url, callback) {
+//     fetch(url)
+//         .then(response => response.json())
+//         .then(data => callback(data))
+//         .catch(error => console.error("Error during API call:", error.message));
+// }
 
-function handleData(data) {
-    console.log("Processed Data:", data);
-}
+// function handleData(data) {
+//     console.log("Processed Data:", data);
+// }
 
-function main() {
-    const apiUrl1 = "https://jsonplaceholder.typicode.com/todos/1";
-    makeApiCall(apiUrl1, handleData); // ✅ Correct function call
-}
+// function main() {
+//     const apiUrl1 = "https://jsonplaceholder.typicode.com/todos/1";
+//     makeApiCall(apiUrl1, handleData); // ✅ Correct function call
+// }
 
-main();
+// main();
+                //promises
+
+
+                function loadImage(url){
+
+                }
+
+
+        
+let imageContainer = document.getElementById("image container")
+                let imgUrl = ["images"]
+
+                promise.all(imgUrl,map(loadImage));
+                
