@@ -6,3 +6,4 @@ console.log("Hello, " + name + "welcome to our game !");
 const ShouldWePlay = prompt('do you want to play ?') ;
 
 
+ 
