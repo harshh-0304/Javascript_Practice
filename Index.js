@@ -360,14 +360,7 @@
                 //promises
 
 
-                function loadImage(url){
-
-                }
-
-
-        
-let imageContainer = document.getElementById("image container")
-                let imgUrl = ["images"]
-
-                promise.all(imgUrl,map(loadImage));
-                
+// 
+//    day 13 july 25 
+//    still learning javascript 
+console.log("hello world!")
